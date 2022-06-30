@@ -4,9 +4,9 @@
 
 /* non-GST-specific stuff */
 
-#include "GSTSIMPLESRC.h"
+#include "gstsimplesrc.h"
 #include "simplesrc.h"
-#include "GSTSIMPLESRCorc.h"
+#include "orc-dist.h"
 
 #include <gst/math-compat.h>
 
