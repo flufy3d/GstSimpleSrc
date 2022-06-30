@@ -8,7 +8,7 @@ cdata.set_quoted('VERSION', meson.project_version())
 cdata.set_quoted('PACKAGE', 'gst-simplesrc-plugin')
 cdata.set_quoted('GST_LICENSE', meson.project_license())
 cdata.set_quoted('GST_PACKAGE_NAME', 'GStreamer Simple Test Source Plug-in')
-cdata.set_quoted('GST_PACKAGE_ORIGIN', 'https://360.world')
+cdata.set_quoted('GST_PACKAGE_ORIGIN', 'https://github.com/flufy3d/GstSimpleSrc')
 configure_file(output : 'config.h', configuration : cdata)
 
 
