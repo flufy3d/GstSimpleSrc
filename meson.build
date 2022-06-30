@@ -1,12 +1,12 @@
 
-project('gst-simple-src', 'c', version : '1.0.1', license : 'MIT')
+project('gst-simple-src', 'c', version : '1.0.1', license : 'MIT/X11')
 
 plugin_c_args = ['-DHAVE_CONFIG_H', '-DDISABLE_ORC']
 
 cdata = configuration_data()
 cdata.set_quoted('VERSION', meson.project_version())
 cdata.set_quoted('PACKAGE', 'gst-simplesrc-plugin')
-cdata.set_quoted('GST_LICENSE', 'MIT')
+cdata.set_quoted('GST_LICENSE', meson.project_license())
 cdata.set_quoted('GST_PACKAGE_NAME', 'GStreamer Simple Test Source Plug-in')
 cdata.set_quoted('GST_PACKAGE_ORIGIN', 'https://360.world')
 configure_file(output : 'config.h', configuration : cdata)
