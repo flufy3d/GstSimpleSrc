@@ -17,3 +17,11 @@ PKG_CONFIG=pkg-config meson build --cross-file cross_file.txt
 
 ninja -C build
 ```
+
+
+## Runing
+
+```
+gst-launch-1.0 simplesrc ! pngenc ! filesink location=foo.png
+
+```
